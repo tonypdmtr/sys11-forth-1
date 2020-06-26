@@ -135,6 +135,7 @@
 	.equ	USE_DIV, 1		/* use HC11 divider instead of eforth UM/MOD routine */
 
 	.equ	USE_SPI, 1		/* Enable words for SPI master transactions (specific to sys11) */
+	.equ	USE_BLOCK, 0		/* Enable words for SPI master transactions (specific to sys11) */
 
 	/* Word flags - added to length, so word length is encoded on 6 bits*/
 	.equ	WORD_IMMEDIATE   , 0x80
@@ -4263,7 +4264,7 @@ SPITRAN:
 	.word	RETURN
 .endif
 
-.if USE_BLOCK
+	.if USE_BLOCK
 /*===========================================================================*/
 /* F2012 BLOCK word set */
 /* This extension uses an SPI EEPROM through the SPI words */

@@ -5,7 +5,7 @@ forth_LKR=hc11.ld
 
 TARGETS=forth
 
-include ../make/programs.mk
+include programs.mk
 
 .PHONY: boot
 boot:
