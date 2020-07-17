@@ -350,7 +350,8 @@ code_JNZD:
 
 /*---------------------------------------------------------------------------*/
 /* PROPRIETARY ( -- ) init HC11 SCI */
-	.section .dic
+/* The first time we use the dic section, make sure this section is loaded */
+	.section .dic,"a",@progbits
 word_IOINIT:
 	.word	word_RETURN
 	.byte	6

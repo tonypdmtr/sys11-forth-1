@@ -23,10 +23,13 @@ SECTIONS
 
 	.rodata : {
 		*(.rodata)
+	} >rom
+
+	.dic : {
 		__DEBUG__DICSTART__ = . ;
 		*(.dic)
 		__DEBUG__DICEND__ = . ;
-	} >rom
+	} > rom
 
 	.vectors : {
 		*(.vectors)
