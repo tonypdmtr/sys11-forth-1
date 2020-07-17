@@ -17,7 +17,7 @@ boot:
 
 .PHONY: dic
 dic:
-	../tools/forthdic.py -dot forth.elf > dic.txt
+	tools/forthdic.py -dot forth.elf > dic.txt
 
 .PHONY: sim
 sim:

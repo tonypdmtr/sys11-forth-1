@@ -3,4 +3,4 @@
 *.bin
 *.srec
 *.dis
-
+*.map
