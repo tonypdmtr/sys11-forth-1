@@ -9,7 +9,7 @@ include programs.mk
 
 .PHONY: boot
 boot:
-	../tools/upload.py \
+	../sys11/tools/upload.py \
 		--reset=rts \
 		--fast \
 		--srec forth.srec \
