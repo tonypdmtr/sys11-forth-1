@@ -9,7 +9,7 @@ include programs.mk
 
 .PHONY: boot
 boot:
-	../sys11/tools/upload.py \
+	../tools/upload.py \
 		--reset=rts \
 		--fast \
 		--srec forth.srec \
@@ -22,4 +22,3 @@ dic:
 .PHONY: sim
 sim:
 	../sim/sim --bin 0xE000:forth.bin
-

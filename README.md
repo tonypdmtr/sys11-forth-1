@@ -28,4 +28,3 @@ Design choices:
 * 8K IO space for peripherals at C000h..DFFFh
 * 32K RAM (almost, always available) in 0100h..7FFFh
 * 16K RAM (optional extension) in 8000h..BFFFh for a total of 48K of RAM.
-

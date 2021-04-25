@@ -15,4 +15,3 @@ activated using the special following word:
 
 The SPI device in the 68HC11 MCU can also be used as a slave (or peripheral).
 This is not supported for now.
-

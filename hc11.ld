@@ -54,4 +54,3 @@ SECTIONS
 		*(.xdata)
 	} >xram
 }
-
